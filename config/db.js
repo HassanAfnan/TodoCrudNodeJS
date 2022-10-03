@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 const config = require('config');
 
-const MONGO_URI = process.env.MONGO_URI ||  config.get('MONGO_URI');
+const MONGO_URI = "mongodb+srv://Afnan:F6RMDrOv1WdbEOew@cluster0.hfkkq.gcp.mongodb.net/?retryWrites=true&w=majority";
 
 // connect DB
 const connecDB = async () => {
 
     try {
-       await mongoose.connect(MONGO_URI, {
+       await mongoose.connect("mongodb+srv://afnan:Fct62xtQKjitsya@cluster0.daqcibd.mongodb.net/?retryWrites=true&w=majority", {
             useNewUrlParser: true,
             useCreateIndex: true,
             useFindAndModify: false,

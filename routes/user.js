@@ -8,7 +8,7 @@ const Joi = require('@hapi/joi')
 const User = require('../models/User');
 
 // environment variable setup
-const JWT_SECRET = process.env.JWT_SECRET || config.get('JWT_SECRET');
+const JWT_SECRET = "AfnanHassan1234432@@@@@@" || config.get('JWT_SECRET');
 
 // api params schema for validation
 const apiParamsSchema = Joi.object({
